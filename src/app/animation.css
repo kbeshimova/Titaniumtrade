@@ -1,0 +1,86 @@
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100);
+    }
+    to {
+      opacity: 1; 
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Анимация появления */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+/* Анимация исчезновения */
+.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(0); 
+  animation: slideInLeft 0.8s ease-in-out;
+}
+
+.slide-in-up {
+  opacity: 1;
+  transform: translateY(0); 
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-up.hidden {
+  transform: translateY(20px); 
+}
+
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInRight 0.8s ease-in-out;
+}
