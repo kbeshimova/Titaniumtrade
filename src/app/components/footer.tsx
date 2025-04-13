@@ -51,7 +51,7 @@ export default function Footer() {
               <h4>Email</h4>
               <p>{t.workTime}</p>
             </div>
-            <a href="mailto:support@gmail.com">support@gmail.com</a>
+            <a href="mailto:support@gmail.com">info@titaniumtradelimited.com</a>
           </div>
           <div className="contact-card d-flex flex-column justify-content-between">
             <Image src="/call.svg" alt="Logo" width={30} height={30} />
@@ -64,7 +64,7 @@ export default function Footer() {
           <div className="contact-card d-flex flex-column justify-content-between">
             <Image src="/map.svg" alt="Logo" width={30} height={30} />
             <div>
-              <h4>{t.card2title}</h4>
+              <h4>{t.card3title}</h4>
               <p>{t.workTime}</p>
             </div>
             <p className="m-0">{t.adress}</p>

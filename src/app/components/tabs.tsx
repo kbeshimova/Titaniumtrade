@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { useLanguage } from "../context/langContext";
+import { useTab } from "../context/tabsContext";
 import { useInView } from "react-intersection-observer";
 
 export default function ProductTabs() {
   const { t } = useLanguage();
+  const { activeTab, setActiveTab } = useTab();
   const tabsData = [
     {
       id: 1,
@@ -39,15 +41,14 @@ export default function ProductTabs() {
     },
   ];
 
-  const [activeTab, setActiveTab] = useState(1);
-
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.2,
-  });
+  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
 
   return (
-    <div  id="catalog" className={`productTabs ${inView ? "fade-in" : "hidden"}`} ref={ref}>
+    <div
+      id="catalog"
+      className={`productTabs ${inView ? "fade-in" : "hidden"}`}
+      ref={ref}
+    >
       <div className="tabs d-flex col-12 justify-content-center gap-3">
         {tabsData.map((tab) => (
           <button
@@ -60,7 +61,7 @@ export default function ProductTabs() {
         ))}
       </div>
 
-      <div className="tab-content mt-4 d-flex justify-content-between flex-wrap ">
+      <div className="tab-content mt-4 d-flex justify-content-between flex-wrap">
         {tabsData
           .find((tab) => tab.id === activeTab)
           ?.products.map((product, index) => (

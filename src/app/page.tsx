@@ -11,10 +11,8 @@ import Footer from "./components/footer";
 import { useLanguage } from "./context/langContext";
 import dynamic from "next/dynamic";
 
-
-
 export default function Home() {
-   const { t } = useLanguage();
+  const { t } = useLanguage();
   const btnText = {
     downloadBtn: t.catalogueBtn,
   };
@@ -27,11 +25,11 @@ export default function Home() {
       <div className="container d-flex flex-column gap-5 py-4">
         <HeroSection />
         <About btnText={btnText} />
-        <Services/>
+        <Services />
         <Advantages btnText={btnText2} />
-        <ProductTabs/>
-        <Faq/>
-        <BannerFollow/>
+        <ProductTabs />
+        <Faq />
+        <BannerFollow />
         <Footer></Footer>
       </div>
     </div>

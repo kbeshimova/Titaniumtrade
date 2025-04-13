@@ -23,16 +23,19 @@
   "priceBtn": "Bahalary göçürip al",
   "servicesItems": [
     {
+      "tabId": 1,
       "servicesTitle": "Miwe",
       "servicesDesc": "Täze we tebigy miweler.",
       "serviceImg": "/frukt.jpg"
     },
     {
+      "tabId": 2,
       "servicesTitle": "Gök önümler",
       "servicesDesc": "Ýokary hilli gök önümler.",
       "serviceImg": "/ovosh.jpg"
     },
     {
+      "tabId": 3,
       "servicesTitle": "Guradylan miweler",
       "servicesDesc": "Premium hilli guradylan miweler.",
       "serviceImg": "/kishmish.jpg"

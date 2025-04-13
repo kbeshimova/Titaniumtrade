@@ -3,12 +3,12 @@
   "description": "We offer you the best services.",
   "about": "About us",
   "services": "Services",
-  "catalogue": "Catalogue",
+  "catalogue": "Catalog",
   "contact": "Contact",
   "faq": "FAQ",
   "heroTitle": "Only high-quality and natural",
   "herodescription": "We supply natural fruits and vegetables grown in accordance with international quality standards from China, Uzbekistan, and Turkmenistan to the world.",
-  "downloadBtn": "Download catalogue",
+  "downloadBtn": "Download catalog",
   "contactBtn": "Contact us",
   "rus": "Russian",
   "eng": "English",
@@ -19,20 +19,23 @@
   "achive1": "tons of fresh fruits and vegetables per year",
   "achive2": "export countries",
   "achive3": "Compliance with international standards",
-  "catalogueBtn": "Download catalogue",
+  "catalogueBtn": "Download catalog",
   "priceBtn": "Download prices",
   "servicesItems": [
     {
+      "tabId": 1,
       "servicesTitle": "Fruits",
       "servicesDesc": "Fresh and natural fruits.",
       "serviceImg": "/frukt.jpg"
     },
     {
+      "tabId": 2,
       "servicesTitle": "Vegetables",
       "servicesDesc": "High-quality vegetables.",
       "serviceImg": "/ovosh.jpg"
     },
     {
+      "tabId": 3,
       "servicesTitle": "Dried fruits",
       "servicesDesc": "Premium quality dried fruits.",
       "serviceImg": "/kishmish.jpg"

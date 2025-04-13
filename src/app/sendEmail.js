@@ -9,19 +9,21 @@ export default async function handler(req, res) {
     }
 
     try {
-      // Настройка транспортера для отправки почты
+      // Настройка транспортера с использованием почты info@titaniumtradelimited.com
       const transporter = nodemailer.createTransport({
-        service: "gmail", // Используйте вашу почтовую службу (например, Gmail, Outlook)
+        host: "smtp.titaniumtradelimited.com", // замените на SMTP-хост вашего провайдера
+        port: 465, // либо 465 для SSL или 587 для STARTTLS
+        secure: true, // true для 465 или false для 587
         auth: {
-          user: "karinabeshimova1998@gmail.com", // Замените на ваш email
-          pass: "lzxr wrvi zqnp adqs", // Замените на ваш пароль приложения
+          user: "info@titaniumtradelimited.com",
+          pass: "kdjtZqZGnHs7RRTnJV4p", // укажите пароль или пароль приложения
         },
       });
 
       // Настройка письма
       const mailOptions = {
-        from: "karinabeshimova1998@gmail.com", // Отправитель
-        to: "karinabeshimova1998@gmail.com", // Получатель (ваш email)
+        from: "info@titaniumtradelimited.com", // отправитель
+        to: "info@titaniumtradelimited.com",   // получатель (ваш email)
         subject: "Новый подписчик на почту",
         text: `Новый пользователь оставил свой email: ${email}`,
       };

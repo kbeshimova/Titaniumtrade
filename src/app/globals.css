@@ -146,6 +146,7 @@ button.primary {
   position: relative;
   overflow: hidden;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white;
 }
 button.primary:hover {
   transform: scale(1.05); /* Увеличение кнопки на 5% */
@@ -166,7 +167,7 @@ button.secondary {
   padding: 5%;
 }
 .aboutContent {
-  padding-right: 25%;
+  padding-right: 18%;
   opacity: 0;
   transform: translate(100%);
   animation: slideUp 1.5s ease forwards;
@@ -301,7 +302,8 @@ button.secondary {
 
 .tab-btn:hover {
   background-color: var(--primary-light);
-  color: white;
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .tab-content {
@@ -339,13 +341,13 @@ button.secondary {
   background-color: var(--primary);
   color: white;
   border: none;
-  cursor: pointer;
+  cursor:unset !important;
   transition: background-color 0.3s ease;
 }
 
-.product-btn:hover {
+/* .product-btn:hover {
   background-color: var(--button-on-hover-color) !important;
-}
+} */
 .faq {
   padding: 0% 10%;
 }

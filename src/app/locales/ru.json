@@ -14,31 +14,34 @@
   "eng": "Английский",
   "tkm": "Туркменский",
   "ch": "Китайский",
-  "aboutTitle": "Driven by a commitment to results and client satisfaction",
+  "aboutTitle": "Руководствуясь стремлением к результатам и удовлетворению клиентов",
   "aboutdesc": "  Titanium Trade Limited - ведущая экспортная компания из Туркменистана, предлагающая широкий ассортимент натуральных и высококачественных плодоовощных продукции.",
   "achive1": "тонн свежих фруктов и овощей ежегодно",
   "achive2": "стран экспорта",
   "achive3": "Cоответствие международным стандартам",
   "catalogueBtn": "Скачать каталог",
-  "priceBtn": "Скачать прайся",
+  "priceBtn": "Скачать прайс",
   
-  "servicesItems": [
-    {
-      "servicesTitle": "Фрукты",
-      "servicesDesc": "Свежие и натуральные фрукты.",
-      "serviceImg": "/frukt.jpg"
-    },
-    {
-      "servicesTitle": "Овощи",
-      "servicesDesc": "Высококачественные овощи.",
-      "serviceImg": "/ovosh.jpg"
-    },
-    {
-      "servicesTitle": "Сухофрукты",
-      "servicesDesc": "Сухофрукты высшего сорта.",
-      "serviceImg": "/kishmish.jpg"
-    }
-  ]
+"servicesItems": [
+  {
+    "tabId": 1,
+    "servicesTitle": "Фрукты",
+    "servicesDesc": "Свежие и натуральные фрукты.",
+    "serviceImg": "/frukt.jpg"
+  },
+  {
+    "tabId": 2,
+    "servicesTitle": "Овощи",
+    "servicesDesc": "Высококачественные овощи.",
+    "serviceImg": "/ovosh.jpg"
+  },
+  {
+    "tabId": 3,
+    "servicesTitle": "Сухофрукты",
+    "servicesDesc": "Сухофрукты высшего сорта.",
+    "serviceImg": "/kishmish.jpg"
+  }
+]
    ,
   "advtitle": "Выращено с заботой, экспортировано с уверенностью",
   "advdesc": "Выбирая нашу продукцию, вы получаете не только вкусные и полезные продукции, но и уверенность в их качестве и безопасности.",
@@ -62,7 +65,7 @@
   "footerTitle2": "Получите ответы",
   "workTime": "Пн–Пт с 8:00 до 18:00",
   "card2title": "Позвоните",
-  "card3title": "Посетите нас",
+  "card3title": "Посетите наш офис",
   "adress": "Hong Kong, East Sun industrial centre",
   "footer2title": "Ищете надёжного поставщика?",
   "footer2desc": "Оставьте ваш email, и мы с вами свяжемся",

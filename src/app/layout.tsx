@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import "./animation.css";
 import { LanguageProvider } from "./context/langContext";
+import { TabProvider, useTab } from "./context/tabsContext";
 
 export const metadata = {
   title: "Titanium Trade Limited",
@@ -45,7 +46,9 @@ export default function RootLayout({
         <link rel="canonical" href="https://titaniumtradelimited.com" />
       </head>
       <body>
+      <TabProvider>
         <LanguageProvider>{children}</LanguageProvider>
+        </TabProvider>
       </body>
     </html>
   );

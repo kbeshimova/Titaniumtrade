@@ -23,16 +23,19 @@
   "priceBtn": "下载价格",
   "servicesItems": [
     {
+      "tabId": 1,
       "servicesTitle": "水果",
       "servicesDesc": "新鲜天然的水果。",
       "serviceImg": "/frukt.jpg"
     },
     {
+      "tabId": 2,
       "servicesTitle": "蔬菜",
       "servicesDesc": "高质量蔬菜。",
       "serviceImg": "/ovosh.jpg"
     },
     {
+      "tabId": 3,
       "servicesTitle": "干果",
       "servicesDesc": "高端品质干果。",
       "serviceImg": "/kishmish.jpg"
