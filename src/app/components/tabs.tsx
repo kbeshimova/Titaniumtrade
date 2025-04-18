@@ -13,30 +13,36 @@ export default function ProductTabs() {
       id: 1,
       title: t.tab1,
       products: [
-        { name: t.product1, image: "/ogurcy.svg" },
-        { name: t.product2, image: "/ogurcy.svg" },
-        { name: t.product3, image: "/ogurcy.svg" },
-        { name: t.product3, image: "/ogurcy.svg" },
-        { name: t.product3, image: "/ogurcy.svg" },
+        { name: t.cucumber, image: "../products/cucumber-min.png" },
+        { name: t.tomato, image: "../products/pomidor-min.png" },
       ],
     },
     {
       id: 2,
       title: t.tab2,
       products: [
-        { name: t.product1, image: "/ogurcy.svg" },
-        { name: t.product2, image: "/ogurcy.svg" },
-        { name: t.product3, image: "/ogurcy.svg" },
-        { name: t.product3, image: "/ogurcy.svg" },
-      ],
+        { name: t.wallnuts, image: "../products/wallnuts-min.png" },
+        { name: t.raisins, image: "../products/raisins-min.png" },
+        { name: t.aprecotKernels, image: "../products/aprecot_kernels.png" },
+        { name: t.aprecotDried, image: "../products/aprecot_dried-min.png" },
+      ]
     },
     {
       id: 3,
       title: t.tab3,
       products: [
-        { name: t.product1, image: "/ogurcy.svg" },
-        { name: t.product2, image: "/ogurcy.svg" },
-        { name: t.product3, image: "/ogurcy.svg" },
+        { name: t.dragonfruit, image: "../products/Dragonfruit-min.png" },
+        { name: t.durian, image: "../products/Soursop_-11-removebg-preview-min.png" },
+        { name: t.mango, image: "../products/mango-min.png" },
+      ],
+    },
+    {
+      id: 4,
+      title: t.tab4,
+      products: [
+        { name: t.orange, image: "../products/apelsin-min.png" },
+        { name: t.tandarine, image: "../products/mandariny-min.png" },
+        { name: t.lemon, image: "../products/limon-min.png" },
       ],
     },
   ];
@@ -61,7 +67,7 @@ export default function ProductTabs() {
         ))}
       </div>
 
-      <div className="tab-content mt-4 d-flex justify-content-between flex-wrap">
+      <div className="tab-content mt-4 d-flex justify-content-start flex-wrap">
         {tabsData
           .find((tab) => tab.id === activeTab)
           ?.products.map((product, index) => (

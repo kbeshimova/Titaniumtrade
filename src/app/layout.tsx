@@ -44,10 +44,11 @@ export default function RootLayout({
         />
         <meta name="twitter:image" content="/path-to-your-image.jpg" />
         <link rel="canonical" href="https://titaniumtradelimited.com" />
+        <link rel="icon" href="/public/ttFavWh.svg" />
       </head>
       <body>
-      <TabProvider>
-        <LanguageProvider>{children}</LanguageProvider>
+        <TabProvider>
+          <LanguageProvider>{children}</LanguageProvider>
         </TabProvider>
       </body>
     </html>

@@ -23,7 +23,7 @@ export default function Services() {
     <section
       ref={ref}
       id="services"
-      className="services w-100 d-flex flex-lg-row flex-md-row flex-sm-column flex-column gap-lg-5 gap-md-1 gap-sm-2 gap-3"
+      className="services w-100 d-flex flex-lg-row flex-md-row flex-sm-column flex-column gap-lg-3 gap-md-1 gap-sm-2 gap-3"
     >
       {t.servicesItems.map((service, index) => (
         <div
@@ -38,7 +38,12 @@ export default function Services() {
           onClick={() => handleCardClick(service.tabId)}
         >
           <h3 className="text-light">{service.servicesTitle}</h3>
-          <p className="text-light">{service.servicesDesc}</p>
+          <ul className="list-group list-unstyled z-2">
+            <li className=" text-light">{service.country}</li>
+            <li className="text-light">{service.sort}</li>
+            <li className="text-light">{service.terms}</li>
+            <li className="text-light">{service.order}</li>
+          </ul>
         </div>
       ))}
     </section>
